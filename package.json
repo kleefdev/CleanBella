@@ -7,8 +7,10 @@
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "tsc --noEmit",
-    "postinstall": "node -e \"const{execSync}=require('child_process');try{execSync('find node_modules -path \\'*/@esbuild/linux-x64/bin/esbuild\\' -exec chmod +x {} \\\\;')}catch(e){}\""
+    "lint": "tsc --noEmit"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
