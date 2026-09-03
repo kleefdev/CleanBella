@@ -1,0 +1,6 @@
+{
+  "name": "CleanBella",
+  "description": "Servicios profesionales de limpieza en Tampico, Tamaulipas. Confiables, detallistas y puntuales.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

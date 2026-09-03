@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-forest: #1a3c34;
+  --color-brand-gold: #c5a059;
+  --color-brand-cream: #fdfbf7;
+  --color-brand-charcoal: #1f2937;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Manrope", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-brand-cream text-brand-charcoal font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.glass-header {
+  @apply bg-brand-cream/90 backdrop-blur-md border-b border-brand-gold/20;
+}
+
+.btn-primary {
+  @apply bg-brand-forest text-brand-cream px-6 py-3 rounded-none font-medium transition-all duration-300 hover:bg-brand-forest/90 hover:shadow-lg active:scale-[0.98];
+}
+
+.btn-outline {
+  @apply border-2 border-brand-forest text-brand-forest px-6 py-3 rounded-none font-medium transition-all duration-300 hover:bg-brand-forest hover:text-brand-cream active:scale-[0.98];
+}
+
+.gold-accent {
+  @apply text-brand-gold;
+}
+
+.section-padding {
+  @apply py-16 md:py-24 px-4 sm:px-6 lg:px-8;
+}
